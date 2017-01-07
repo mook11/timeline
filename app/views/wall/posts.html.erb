@@ -5,7 +5,8 @@
 	<h3 style="color:navy;"><%=post.name%></h3>
 	<p><%=post.content%></p>
 	<p style="font-size: 90%; text-align; right;">
-	<a href="/wall/edit/<%= post.id %>">edit</a></p>
+	<a href="/wall/edit/<%= post.id %>">edit</a>
+	<a href="/wall/delete/<%=post.id%>">delete</a></p>
 	</div><br>
 	<%end%>
 	<a href="/wall/write">글쓰기</a>
