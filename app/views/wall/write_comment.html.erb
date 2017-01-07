@@ -1,12 +1,12 @@
 <div style="background-color : #e9eaed;">
 <h1> write comment</h1>
 <form action="/wall/write_comment_complete" method="post">
-	<input type="hidden" name="id" value="<%=@post_comment.id%>">
+	<input type="hidden" name="post_id" value="<%=@post_comment.id%>">
 	<div style="background-color: #ffffff; width: 400px; border: 2px solid #d3d6db; padding: 10px; word-break: break-all;">
 	<h3 style="color: blue;"><%=@post_comment.name%></h3>
 	<p><%=@post_comment.content%></p>
 	</div><br>
-	<input style="width: 100px;" type="text" name="writer" placeholder="name">:<input style="width: 300px;" type="text" name="content" placeholder="write comment">
+	<input style="width: 100px;" type="text" name="name" placeholder="name"><input style="width: 300px;" type="text" name="content" placeholder="write comment">
 	<input type="submit" value="write">
 	</form>
 	</div>

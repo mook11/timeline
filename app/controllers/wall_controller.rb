@@ -44,6 +44,17 @@ class WallController < ApplicationController
   def write_comment
   @post_comment = Post.find(params[:id])
   end
+
+  def write_comment_complete
+  c = Comment.new
+  c.post_id = params[:post_id]
+  c.name = params[:name]
+  c.content = params[:content]
+  c.save
+
+  redirect_to "/wall/posts"
+  end
+
   def posts
   @posts = Post.all
   end
