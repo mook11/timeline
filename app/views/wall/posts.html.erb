@@ -1,4 +1,5 @@
 <div>
+	<h4><%=flash[:alert] %></h4>
 	<a href="/user/signup">회원가입</a>
 </div>
 <div style="background-color:#e9eaed; width=500px">
@@ -21,3 +22,6 @@
 	<a href="/wall/write">글쓰기</a>
 </div>
 
+<%user.all.each do |user|%>
+<p><%=user.username%></p>
+<%end%>

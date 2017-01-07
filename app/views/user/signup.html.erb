@@ -1,9 +1,12 @@
+<div>
+	<h4> <%=flash[:alert]%></h4>
+	</div>
 <div style="background-color:#e9eaed;">
 <h1>sign up</h1>
 <form action="/user/signup_complete" method="post">
 	ID: <input type="text" name="username"><br>
 	PASSWARD : <input type="text" name="password"><br>
-	RETYPE PW: <input type="text" name="password"><br>
+	RETYPE PW: <input type="text" name="retype_password"><br>
 	<input type="submit" value="가입하기">
 	</form>
 	</div>
