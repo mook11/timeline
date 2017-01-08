@@ -1,6 +1,10 @@
 <div>
 	<h4><%=flash[:alert] %></h4>
+	<%if cookies[:user_id].nill?%>
 	<a href="/user/signup">sign up</a> <a href="/user/login">login</a>
+	<%else%>
+	<a href="/user/logout">logout</a>
+	<%end%>
 </div>
 <div style="background-color:#e9eaed; width=500px">
 	<h1>여러분의 타임라인</h1>
